@@ -1,0 +1,315 @@
+
+.table tbody tr.filaEP:hover td {
+    background-color: #EEDC82 !important;
+}
+
+.table tbody tr.filaActiva:hover td {
+    background-color: #5cb85c !important;
+}
+
+.alert-hidden {
+    display: none;
+}
+
+/*===================================
+=            CSS GENERAL            =
+===================================*/
+
+/*==========  CUERPO DE LA PAGINA  ==========*/
+ html, body {
+    height: 100%;
+    background-color: #eee;
+}
+
+input[readonly], input[readonly="readonly"] {
+    background-color: white !important;
+}
+
+#wrap {
+    margin-top: 80px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -35px;
+}
+
+#wrap > .container, .fluid-container {
+    padding: 56px 15px 0;
+}
+.fluid-container {
+    padding-left: 13px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.panel-top {
+    padding-top: 10px;
+}
+/*==========  ELEMENTOS  ==========*/
+textarea {
+    resize: none;
+}
+ul>li>a {
+    cursor: pointer;
+}
+td .list-inline {
+    margin: 0 !important;
+}
+
+/*==========  BARRA DE NAVEGACIÓN  ==========*/
+.navbar-brand img {
+    padding: 4px 10px 3px 5px;
+    height: 55px;
+}
+.navinfo .navuserinfo h4 {
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+.navinfo .navuserinfo {
+    text-align: right;
+    position: relative;
+    right: 25px;
+}
+.navinfo img {
+    position: relative;
+    right: 35px;
+    top: 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+.navinfo i {
+    position: absolute;
+    top: 7px;
+    right: 35px;
+    color: silver;
+}
+.navinfo i:hover {
+    color: white;
+    cursor: pointer;
+}
+/*==========  Clases varias  ==========*/
+.reset {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.white {
+    color: white !important;
+}
+.silver {
+    color: silver;
+}
+.topspace {
+    margin-top: 9px;
+}
+.hparent {
+    position: relative;
+    top: -5px;
+    z-index: 100;
+}
+.img-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+/*-----  End of CSS GENERAL  ------*/
+
+/*=====================================
+=            login.blade.php          =
+=====================================*/
+
+#logForm {
+    background-color: white;
+    box-shadow: 0 1px 20px -5px;
+    margin: 100px 0;
+    padding: 2em;
+    border-radius: 15px;
+    border: #ccc 1px solid;
+}
+
+#logForm input[type='checkbox'] {
+    position: relative;
+    top: 2px;
+}
+
+.form-control-feedback {
+    display: none;
+}
+.has-feedback > .form-control-feedback {
+    display: block;
+}
+/*----- End of login.blade.php ------*/
+
+/*===========================================
+=            TOP-BAR, MENU Y CONTENT        =
+===========================================*/
+
+/*==========  Contenido  ==========*/
+ .content {
+    padding-left: 190px;
+    margin-top: 45px;
+}
+/*==========  Barra superior  ==========*/
+ .top-bar {
+    border-bottom: #ccc 1px solid;
+    background-image:-webkit-gradient(linear, left 0, left 100%, from(#f5f5f5), to(#e8e8e8));
+    background-image:-webkit-linear-gradient(top, #f5f5f5, 0%, #e8e8e8, 100%);
+    background-image:-moz-linear-gradient(top, #f5f5f5 0, #e8e8e8 100%);
+    background-image:linear-gradient(to bottom, #f5f5f5 0, #e8e8e8 100%);
+    background-repeat:repeat-x;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+    height: 35px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index:200;
+}
+.top-bar button, a {
+    margin: 1.2px 1.5px;
+}
+.top-bar h2 {
+    position: relative;
+    top: 1px;
+    color: #ccc;
+    margin-left: 5px !important;
+    margin-top: 1px;
+    font-weight: 600;
+    text-shadow:#fff 0 1px 0, #999999 0 -1px 0;
+}
+#show-menu {
+    margin: 0;
+    position: relative;
+    padding-left: 25px;
+    padding-right: 60px;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+    left: -20px;
+    height: 100%;
+    padding-bottom: 8px;
+    border-radius: 0;
+    display: none;
+    width: 50px;
+}
+/*==========  Menu de navegación izquierdo  ==========*/
+#menu-container {
+    position: absolute;
+    height: 100%;
+}
+#menu-container > ul {
+    background-color: #fafafa;
+    background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
+    background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+    background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+    background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+    background-repeat: repeat-x;
+    border: 1px solid #d4d4d4;
+    border-left: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+    /**zoom: 1;*/
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    position: fixed;
+    top: 89px;
+    height: 100%;
+    width: 190px;
+    border-right: #ccc 1px solid;
+    z-index: 199;
+}
+.menuadmin > li {
+    list-style: none;
+    padding: 5px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-left: #ccc 5px solid;
+    border-bottom: #ccc 2px dotted;
+    background-position: 10%; /*SE CAMBIO*/
+    background-repeat: no-repeat;
+    transition: border-bottom 0.5s, border-left 0.5s, background-image 0.5s;
+}
+.menuadmin > li:hover {
+    border-bottom: #B70304 2px dotted;
+    border-left: #B70304 5px solid;
+}
+
+#am-support {
+    background-image: url('../img/iconos/preguntas__1.png');
+    background-size: 31px 28px;
+}
+#am-support:hover, #am-support.current {
+    background-image: url('../img/iconos/preguntas__2.png');
+    transition: background-image 0.5s;
+}
+#am-help {
+    background-image: url('../img/iconos/help__1.png');
+    background-size: 31px 28px;
+}
+#am-help:hover, #am-help.current {
+    background-image: url('../img/iconos/help__2.png');
+    transition: background-image 0.5s;
+}
+.menuadmin li > a {
+    position: relative;
+    top: -3px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    color: gray;
+    transition: color 0.5s;
+}
+.menuadmin li > a > i {
+    position: relative;
+    top: 5px;
+    margin-left: 10px;
+    width: 50px;
+    font-size: 24px;
+}
+#home-icon {
+    font-size: 32px;
+}
+.menuadmin li, .menuadmin li > a:hover {
+    color: #B70304;
+}
+.menuadmin > li > a > .badge {
+    position: absolute; 
+    right: 5px; 
+    background-color: #B70304;
+}
+.menuadmin .current a {
+    color: #B70304;
+}
+.menuadmin .current {
+    border-left: #B70304 5px solid;
+    border-bottom: 2px #B70304 dotted;
+}
+/*-----  End of Menu de navegación izquierdo  ------*/
+
+/*=================================================
+=            TABLA         =
+=================================================*/
+
+.table tbody tr.selected td {
+    background-color: #B70304 !important;
+    font-style: oblique;
+    color: white;
+    transition: background-color 0.5s;
+}
+.table tbody tr:hover td, .table tbody tr:hover th {
+    background-color: #efefef;
+}
+.panel-heading .btn-group, #popmenubtn {
+    position: relative;
+    top: -7px;
+}
+#popmenubtn button:first-child {
+    margin-top: 1em;
+}
+#popmenubtn button {
+    border-radius: 8px !important;
+    text-align: center;
+    margin-top: 3px;
+    width: 100%;
+}
+/*-----  End of VIEW - VER DISTRIBUIDORES  ------*/
+
