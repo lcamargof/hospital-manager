@@ -15,18 +15,14 @@ Route::get('/', ['middleware' => 'guest', function () {
     return view('login'); 
 }]);
 
-//RUTA LOGIN
 Route::post('/login', array('uses' => 'AuthController@doLogin', 'middleware' => 'guest'));
 
-Route::group(array('middleware' => 'auth'), function()
-{
-	/*==========  Generales  ==========*/
-
+Route::group(array('middleware' => 'auth'), function() {
+	/*==========  Auth routes  ==========*/
 	Route::get('/home', 'AuthController@rolCheck');
 	Route::get('/logout', 'AuthController@doLogout');
 
 	/*==========  RESTful routes  ==========*/
-
 	Route::get('wards', 'BedController@getWards');
 	Route::resource('patients', 'PatientController');
 	Route::resource('beds', 'BedController');
@@ -34,7 +30,4 @@ Route::group(array('middleware' => 'auth'), function()
 	Route::resource('records', 'RecordController');
 	Route::resource('staff', 'StaffController');
 	Route::resource('users', 'UserController');
-
-	/*==========  Controladores especificos  ==========*/
-
 });

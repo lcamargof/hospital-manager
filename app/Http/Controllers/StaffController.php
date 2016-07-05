@@ -150,7 +150,7 @@ class StaffController extends Controller {
                // Updating user id_number if needed
                if($doctor->id_number != $request->input('id_number')) {
                   $user = User::where('doctor_id', $id)->get()->first();
-                  $user->id_number = $request->input('id_number');
+                  $user->user = $request->input('id_number');
                   $user->save();
                }
 
